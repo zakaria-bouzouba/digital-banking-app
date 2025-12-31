@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import ma.ebanking.backend.enums.OperationType;
+
 import java.util.Date;
 
 @Entity
