@@ -9,6 +9,7 @@ import { AdminTemplateComponent } from './admin-template/admin-template.componen
 import { AuthenticationGuard } from './guards/authentication.guard';
 import { AuthorizationGuard } from './guards/authorization.guard';
 import { NotAuthorizedComponent } from './not-authorized/not-authorized.component';
+import { ChatComponent } from './chat/chat.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
     children: [
       { path: 'customers', component: CustomersComponent },
       { path: 'accounts', component: AccountsComponent },
+      { path: 'chat', component: ChatComponent },
       {
         path: 'new-customer',
         component: NewCustomerComponent,

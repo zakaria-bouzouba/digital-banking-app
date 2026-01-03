@@ -26,6 +26,7 @@ export class CustomersComponent implements OnInit {
     });
     this.handleSearchCustomers();
   }
+
   handleSearchCustomers() {
     let kw = this.searchFormGroup?.value.keyword;
     this.customers = this.customerService.searchCustomers(kw).pipe(
@@ -56,7 +57,7 @@ export class CustomersComponent implements OnInit {
   }
 
   handleCustomerAccounts(customer: Customer) {
-    this.router.navigateByUrl('/customer-accounts/' + customer.id, {
+    this.router.navigateByUrl('/admin/customer-accounts/' + customer.id, {
       state: customer,
     });
   }
